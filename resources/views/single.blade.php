@@ -11,7 +11,7 @@
 	<div class="home">
 		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="{{ url('images/single_background.jpg') }}"></div>
 		<div class="home_content">
-			<div class="home_title">the offers</div>
+			<div class="home_title" style="font-size:40px">{{ $title }}</div>
 		</div>
 	</div>
 

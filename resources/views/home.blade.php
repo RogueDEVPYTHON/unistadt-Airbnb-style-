@@ -1,4 +1,8 @@
 @extends('layouts.master')
+@section('after_style')
+<link rel="stylesheet" type="text/css" href="{{ url('styles/main_styles.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url('styles/responsive.css') }}">
+@endsection
 @section('content')
     <!-- Home -->
 

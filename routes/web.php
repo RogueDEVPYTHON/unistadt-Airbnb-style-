@@ -26,3 +26,4 @@ Route::post('upload', 'FlatController@UploadImages');
 Route::post('insert_description', 'FlatController@InsertDescription');
 Route::get('flats', 'FlatController@Flats');
 Route::get('single/{id}', 'FlatController@Single');
+Route::get('account', 'UsersController@Account');

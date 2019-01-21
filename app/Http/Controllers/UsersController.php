@@ -49,4 +49,14 @@ class UsersController extends Controller
         return redirect('/');
 
     }
+    /**
+     * Show Account information Page
+     * 
+     * @return void
+     */
+    public function Account(){
+        $data['title'] = 'Account Information';
+        $data['user'] = Users::where('id', auth()->user()->id)->first();
+        return view('account', $data);
+    }
 }

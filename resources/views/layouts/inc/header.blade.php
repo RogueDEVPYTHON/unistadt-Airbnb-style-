@@ -21,7 +21,7 @@
                 $currentuser = App\Models\Users::where('id', auth()->user()->id)->first();
                 ?>
                 <div class="user_box ml-auto">
-                    <div class="user_box_login user_box_link"><a href="#">{{ $currentuser->full_name }}</a></div>
+                    <div class="user_box_login user_box_link"><a href="{{ url('account') }}">{{ $currentuser->full_name }}</a></div>
                     <div class="user_box_register user_box_link"><a href="{{ url('logout') }}">Logout</a></div>
                 </div>
                 @else

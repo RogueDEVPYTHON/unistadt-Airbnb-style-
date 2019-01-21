@@ -78,7 +78,6 @@ class FlatController extends Controller
      * @return void
      */
     public function InsertDescription(Request $request){
-        //return $request;
         $new_flat = Flats::where('tmp_token', $request->_token)->where('user_id', auth()->user()->id)->first();
         if(empty($new_flat))
             $new_flat = new Flats();
@@ -111,4 +110,5 @@ class FlatController extends Controller
         $data['title'] = $data['flat']->headlines;
         return view('single', $data);
     }
+
 }

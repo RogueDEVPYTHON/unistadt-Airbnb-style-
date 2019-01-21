@@ -978,7 +978,7 @@ section
     animation: fadeEffect 1s;
     padding-left: 54px;
     padding-right: 47px;
-    margin-top: -25px;
+    margin-top: 25px;
 }
 .search_panel.active
 {
